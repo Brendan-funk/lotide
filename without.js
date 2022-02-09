@@ -18,24 +18,23 @@ const assertArraysEqual = function(arr1,arr2) {
   }
 };
 
-const without = function(arr,arr2){
+const without = function(arr,arr2) {
   let output = [];
   let isNotWanted = false;
-  for(let i = 0; i < arr.length; i++){
-    for(let j = 0; j < arr2.length; j++){
-      if(arr[i] === arr2[j]){
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      if (arr[i] === arr2[j]) {
         isNotWanted = true;
       }
     }
-    if(isNotWanted){
+    if (isNotWanted) {
       isNotWanted = false;
-    }
-    else{
+    } else {
       output.push(arr[i]);
     }
   }
   return output;
-}
+};
 
 //test cases
 console.log(without([1, 2, 3], [1])); // => [2, 3]
