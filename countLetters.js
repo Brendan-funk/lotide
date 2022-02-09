@@ -21,6 +21,7 @@ const countLetters = function(str) {
   return results;
 };
 
+//test cases
 const test = countLetters('lighthouse in the house');
 assertEqual(test['l'],1);
 assertEqual(test['i'],2);
