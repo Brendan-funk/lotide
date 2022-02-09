@@ -19,7 +19,7 @@ const assertArrayEqual = function(arr1,arr2) {
 };
 
 //get middle values of an array
-const middle = function(arr){
+const middle = function(arr) {
 
   let output = [];
   let middleIndex = Math.floor(arr.length / 2);
@@ -30,9 +30,9 @@ const middle = function(arr){
   output.push(arr[middleIndex]);
   if (arr.length % 2 === 0) {
     output.unshift(arr[middleIndex] - 1);
-  }  
+  }
   return output;
-}
+};
 
 assertArrayEqual(middle([1]), []);
 assertArrayEqual(middle([1, 2]), []);
