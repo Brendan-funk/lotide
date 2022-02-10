@@ -10,11 +10,11 @@ const countOnly = function(allItems,itemsToCount) {
   const results = {};
   results['count']  = 0;
 
-  for (const item of allItems){
+  for (const item of allItems) {
     if (itemsToCount[item]) {
       if (results[item]) {
         results[item] += 1;
-      } else{
+      } else {
         results[item] = 1;
       }
     }
