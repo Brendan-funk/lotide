@@ -11,11 +11,13 @@ const eqObjects = function(obj1,obj2) {
       if (!eqArrays(obj1[key],obj2[key])) {
         return false;
       }
-    } else if (typeof(obj1[key]) === 'object' && typeof(obj2[key]) === 'object') {
+    }
+    if (typeof(obj1[key]) === 'object' && typeof(obj2[key]) === 'object') {
       if (!eqObjects(obj1[key]),obj2[key]) {
         return false;
       }
-    } else if (obj1[key] !== obj2[key]) {
+    }
+    if (obj1[key] !== obj2[key]) {
       return false;
     }
   }
@@ -38,9 +40,10 @@ const assertObjectsEqual = function(obj1,obj2) {
   const inspect = require('util').inspect;
   if (eqObjects(obj1,obj2)) {
     console.log(`✅ Assertion Passed: ${inspect(obj1)} === ${inspect(obj2)}`);
-  } else {
-    console.log(`❌ Assertion Failed: ${inspect(obj1)} !== ${inspect(obj2)}`);
+    return;
   }
+  console.log(`❌ Assertion Failed: ${inspect(obj1)} !== ${inspect(obj2)}`);
+  
 };
 
 const a = {

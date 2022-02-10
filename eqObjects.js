@@ -1,9 +1,9 @@
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
+    return;
   }
+  console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
 };
 
 const eqArrays = function(arr1,arr2) {
@@ -31,11 +31,13 @@ const eqObjects = function(obj1,obj2) {
       if (!eqArrays(obj1[key],obj2[key])) {
         return false;
       }
-    } else if (typeof(obj1[key]) === 'object' && typeof(obj2[key]) === 'object') {
+    }
+    if (typeof(obj1[key]) === 'object' && typeof(obj2[key]) === 'object') {
       if (!eqObjects(obj1[key]),obj2[key]) {
         return false;
       }
-    } else if (obj1[key] !== obj2[key]) {
+    }
+    if (obj1[key] !== obj2[key]) {
       return false;
     }
   }

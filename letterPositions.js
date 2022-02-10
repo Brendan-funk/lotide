@@ -13,9 +13,9 @@ const eqArrays = function(arr1,arr2) {
 const assertArrayEqual = function(arr1,arr2) {
   if (eqArrays(arr1,arr2)) {
     console.log(`✅ Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`❌ Assertion Failed: ${arr1} !== ${arr2}`);
+    return;
   }
+  console.log(`❌ Assertion Failed: ${arr1} !== ${arr2}`);
 };
 
 const letterPositions = function(str) {
@@ -24,9 +24,8 @@ const letterPositions = function(str) {
     if (str.charAt(i) !== ' ') {
       if (results[str.charAt(i)]) {
         results[str.charAt(i)].push(i);
-      } else {
-        results[str.charAt(i)] = [i];
       }
+      results[str.charAt(i)] = [i];
     }
   }
   return results;

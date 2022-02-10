@@ -1,9 +1,9 @@
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
+    return;
   }
+  console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
 };
 
 const countLetters = function(str) {
@@ -13,9 +13,9 @@ const countLetters = function(str) {
   for (const letter of input) {
     if (results[letter]) {
       results[letter] += 1;
-    } else {
-      results[letter] = 1;
     }
+    results[letter] = 1;
+    
 
   }
   return results;
