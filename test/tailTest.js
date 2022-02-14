@@ -1,8 +1,19 @@
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert
 
-//test cases
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-const output = tail(words);
-assertEqual(words.length, 3); // original array should still have 3 elements!
-assertEqual(output.length,2);
+//-----------TEST CODE----------
+describe('#tail', () => {
+
+  it('not change the original array', () => {
+    const words = ["Yo Yo", 'Lighthouse', 'Labs'];
+    tail(words);
+    assert.strictEqual(words.length,3);
+  });
+
+  it('should return ["Lighthouse","Labs"] when given ["Yo Yo", "Lighthouse", "Labs"]', () => {
+  const words = ["Yo Yo", 'Lighthouse', 'Labs'];
+  const expectedOutput = ['Lighthouse','Labs'];
+  const output = tail(words);
+  assert.deepEqual(output,expectedOutput);
+  });
+})
