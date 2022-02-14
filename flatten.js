@@ -35,7 +35,7 @@ const flatten = function(arr) {
   }
   return output;
 };
-
+module.exports = flatten;
 //test cases
 console.log(flatten([1,2,[3,4],[5,[6]]]));
 assertArrayEqual(flatten([[1, [2,3]],4,5]),[1,2,3,4,5]);

@@ -20,7 +20,7 @@ const countOnly = function(allItems,itemsToCount) {
   }
   return results;
 };
-
+module.exports = countOnly;
 //test case
 const firstNames = [
   "Karl",

@@ -36,7 +36,7 @@ const without = function(arr,arr2) {
   
   return output;
 };
-
+module.exports = without;
 //test cases
 console.log(without([1, 2, 3], [1])); // => [2, 3]
 console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]

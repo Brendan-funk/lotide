@@ -30,7 +30,7 @@ const letterPositions = function(str) {
   }
   return results;
 };
-
+module.exports = letterPositions;
 //test case
 const test = letterPositions('lighthouse in the house');
 assertArrayEqual(test['l'],[0]);

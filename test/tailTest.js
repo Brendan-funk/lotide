@@ -1,7 +1,7 @@
 const tail = require('../tail');
 const assert = require('chai').assert
 
-//-----------TEST CODE----------
+//-----------TEST CODE----------//
 describe('#tail', () => {
 
   it('not change the original array', () => {

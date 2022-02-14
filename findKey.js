@@ -14,7 +14,7 @@ const assertEqual = function(actual, expected) {
     console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-
+module.exports = findKey;
 const results = findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
