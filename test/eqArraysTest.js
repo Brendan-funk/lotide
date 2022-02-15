@@ -1,16 +1,7 @@
 const assert = require('chai').assert;
-const eqArrays = require('../index').eqArrays;
+const {eqArrays} = require('../index');
 
-
-//test cases
-/*
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // => true
-assertArraysEqual([1, 2, 3], [3, 2, 1]); // => false
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => true
-assertArraysEqual(["1", ["2", "3"]], ["1", ["2", "3"]]); // => true
-
-*/
-
+//-----------TEST CODE----------//
 describe('#eqArray', () => {
 
   it('should return true if given [1,2,3] and [1,2,3];', () => {
@@ -38,4 +29,4 @@ describe('#eqArray', () => {
     const output = eqArrays(arr1,arr2);
     assert.strictEqual(output,false);
   });
-})
+});

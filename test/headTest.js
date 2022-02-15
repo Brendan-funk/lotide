@@ -19,9 +19,9 @@ describe('#head', () => {
   it('returns "Hello" for ["Hello","Lighthouse", "Labs]', () => {
     const input = ['Hello','Lighthouse','Labs'];
     assert.strictEqual(head(input),'Hello');
-  })
+  });
 
   it('returns undefined for []', () => {
     assert.strictEqual(head([]),undefined);
-  })
-})
+  });
+});

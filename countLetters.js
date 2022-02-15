@@ -1,3 +1,4 @@
+//counts the amount of times letters appear in strings
 const countLetters = function(str) {
   const results = {};
   const noSpace = str.replace(/\s/g, '');
@@ -5,11 +6,9 @@ const countLetters = function(str) {
   for (const letter of input) {
     if (results[letter]) {
       results[letter]++;
-    }
-    else {
+    } else {
       results[letter] = 1;
     }
-
   }
   return results;
 };

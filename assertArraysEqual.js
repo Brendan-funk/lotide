@@ -1,3 +1,4 @@
+//console logs the result of eqArrays
 const eqArrays = require('./eqArrays');
 
 const assertArrayEqual = function(arr1,arr2) {

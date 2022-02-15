@@ -1,5 +1,5 @@
 const tail = require('../index').tail;
-const assert = require('chai').assert
+const assert = require('chai').assert;
 
 //-----------TEST CODE----------//
 describe('#tail', () => {
@@ -11,9 +11,9 @@ describe('#tail', () => {
   });
 
   it('should return ["Lighthouse","Labs"] when given ["Yo Yo", "Lighthouse", "Labs"]', () => {
-  const words = ["Yo Yo", 'Lighthouse', 'Labs'];
-  const expectedOutput = ['Lighthouse','Labs'];
-  const output = tail(words);
-  assert.deepEqual(output,expectedOutput);
+    const words = ["Yo Yo", 'Lighthouse', 'Labs'];
+    const expectedOutput = ['Lighthouse','Labs'];
+    const output = tail(words);
+    assert.deepEqual(output,expectedOutput);
   });
-})
+});

@@ -39,4 +39,4 @@ describe('#middle', () => {
     const expectedOutput = [3,4];
     assert.deepEqual(middle(input),expectedOutput);
   });
-})
+});
