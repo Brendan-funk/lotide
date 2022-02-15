@@ -1,3 +1,4 @@
+const eqArrays = require('./eqArrays');
 const head = require('./head');
 const tail = require('./tail');
 const middle = require('./middle');
@@ -11,6 +12,7 @@ const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
 module.exports = {
+  eqArrays,
   head,
   tail,
   middle,
