@@ -1,4 +1,4 @@
-//keeps an array of all the positions a letter has shown up in a string
+//returns an object of all the positions a letter has shown up in a string
 const letterPositions = function(str) {
   const results = {};
   for (let i = 0; i < str.length; i ++) {

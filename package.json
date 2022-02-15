@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@brendanzfunk/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a smaller copy of lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Brendan-funk/lotide.git"
   },
-  "author": "Brendan-Funk",
+  "author": "@brendanzfunk",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Brendan-funk/lotide/issues"

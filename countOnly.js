@@ -1,4 +1,4 @@
-//counts only what is specified
+//counts values in an object, only what is specified
 const countOnly = function(allItems,itemsToCount) {
   const results = {};
   for (const item of allItems) {
